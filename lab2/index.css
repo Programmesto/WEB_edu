@@ -1,0 +1,25 @@
+form {
+    position: relative;
+    background: #99aa89;
+    
+    padding: 1%;
+    top: 30px;
+    margin: 0 auto;
+    width: 300px;
+    /*box-shadow: 0px 0px 10px rgb(196, 185, 154);   */
+}
+
+/*
+:required {
+    box-shadow: 0px 0px 10px rgb(236, 221, 183); 
+}
+:optional {
+    box-shadow: 0px 0px 20px rgb(165, 155, 129);   
+}
+#button :hover {
+    box-shadow: 0px 0px 20px rgb(82, 82, 82);
+}
+:valid {
+    background-color: rgb(153, 189, 133);;
+}
+*/
