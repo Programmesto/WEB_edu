@@ -9,17 +9,25 @@ form {
     /*box-shadow: 0px 0px 10px rgb(196, 185, 154);   */
 }
 
-/*
+
 :required {
-    box-shadow: 0px 0px 10px rgb(236, 221, 183); 
+    border-radius: 2px;
+    border-color: black;
 }
 :optional {
     box-shadow: 0px 0px 20px rgb(165, 155, 129);   
 }
-#button :hover {
-    box-shadow: 0px 0px 20px rgb(82, 82, 82);
-}
-:valid {
+input:valid {
     background-color: rgb(153, 189, 133);;
 }
-*/
+input:invalid {
+    background-color:  rgb(196, 87, 87);
+}
+:checked {
+    box-shadow: 0px 0px 10px orange;   
+}
+#button :hover {
+    background-color: cornsilk;
+}
+
+

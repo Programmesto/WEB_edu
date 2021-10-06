@@ -15,6 +15,10 @@
             <label for="lastname">Фамилия</label>
             <input type="text" id="lastname" name="lastname" placeholder="last name" required maxlength="20" />
         </p>
+        <p>
+            <label for="nickname">Никнейм</label>
+            <input type="text" id="nickname" name="nickname" placeholder="nickname" maxlength="10" pattern="[A-Za-z]{6,}" />
+        </p>
         <P>
         Ваш пол: <INPUT type="radio" name="gender" value="Male" required> Мужской
         &nbsp; <INPUT type="radio" name="gender" value="Female" required> Женский
@@ -35,7 +39,7 @@
         </p>
         <p>
             <label>
-            <input type="checkbox" name="newsletter"/>
+            <input type="checkbox" name="newsletter" />
             Подпишитесь на рассылку
             </label>
         </p>
