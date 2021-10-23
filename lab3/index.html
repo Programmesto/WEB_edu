@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    function checkPasswords() {
+        
+        if(document.formmm.password.value==document.formmm.repeatPassword.value) {
+            document.getElementById("checkbox").style.opacity = "1";
+        }
+        else {
+            document.getElementById("checkbox").style.opacity = "0";
+        }
+    }
+
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id=RegForm>
+        <h1>Регистрация</h1>
+        <form name="formmm">
+           <h4>Login:</h4>
+           <input type="text" id="login" name="login">
+           
+           <h4>Password:</h4>
+           <input type="password" id="password" name="password" >
+
+           <h4>Repeat password:</h4>
+           <p>
+                <input type="password" id="repeatPassword" name="repeatPassword" onblur=checkPasswords()>
+                <img src="images/checked.jpg" alt="ok" id="checkbox">
+            </p>
+            
+           <input type="button" id="submitButton" value="Submit">
+
+        </form>
+
+    </div>
+</body>
+</html>

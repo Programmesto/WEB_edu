@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<script src="script.js"></script>
+<body>
+    
+    <button onclick="openForm()">
+        Открыть форму
+    </button>
+
+
+    <form id="myForm" name="myForm" action="" method="post">
+        <p>
+            <label for="firstname">Имя</label>
+            <input type="text" id="firstname" name="firstname" placeholder="first name" required maxlength="20" />
+        </p>
+        <p>
+            <label for="lastname">Фамилия</label>
+            <input type="text" id="lastname" name="lastname" placeholder="last name" required maxlength="20" />
+        </p>
+        <p>
+            <label for="nickname">Никнейм</label>
+            <input type="text" id="nickname" name="nickname" placeholder="nickname" maxlength="10" pattern="[A-Za-z]{6,}" />
+        </p>
+        <p>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" >
+        </p>
+        
+        <p>
+            <label for="repeatPassword">Повторите пароль</label>
+             <input type="password" id="repeatPassword" name="repeatPassword" onblur=checkPasswords()>
+             <img src="images/checked.jpg" alt="ok" id="checkbox">
+         </p>
+        <div id="passValComment"></div>
+
+        <P>
+        Ваш пол: <INPUT type="radio" name="gender" value="Male" required> Мужской
+        &nbsp; <INPUT type="radio" name="gender" value="Female" required> Женский
+        </P>
+        <P>Ваш возраст:
+            <SELECT name="age" required>
+            <OPTION value="">Выберите одну из опций:</OPTION>           
+            <OPTION value="0-18 years">0-18 лет</OPTION>           
+            <OPTION value="18-30 years">18-30 лет</OPTION>           
+            <OPTION value="30-45 years">30-45 лет</OPTION>           
+            <OPTION value="45-60 years">45-60 лет</OPTION>           
+            <OPTION value="60+ years">60+ лет</OPTION>          
+            </SELECT>
+        </p>
+        <p>
+            <label for="email">Email адрес</label>
+            <input type="email" id="email" name="email" placeholder=your@email.address required maxlength="50" />
+        </p>
+        <p>
+            <label>
+            <input type="checkbox" name="newsletter" />
+            Подпишитесь на рассылку
+            </label>
+        </p>
+        <P>
+            <div id=button>
+            <INPUT type="submit" name="send" value="Отправить данные" onsubmit="closeForm()">
+            </div>
+        </P>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+form {
+    position: relative;
+    background: #99aa89;
+    
+    padding: 1%;
+    top: 30px;
+    margin: 0 auto;
+    width: 350px;
+    /*box-shadow: 0px 0px 10px rgb(196, 185, 154);   */
+}
+#myForm {
+    display: none;
+}
+#checkbox {
+    width: 30px;
+    opacity: 0;
+}
+
+:required {
+    border-radius: 2px;
+    border-color: black;
+}
+:optional {
+    box-shadow: 0px 0px 20px rgb(165, 155, 129);   
+}
+input:valid {
+    background-color: rgb(153, 189, 133);;
+}
+input:invalid {
+    background-color:  rgb(196, 87, 87);
+}
+:checked {
+    box-shadow: 0px 0px 10px orange;   
+}
+#button :hover {
+    background-color: cornsilk;
+}
+
+
