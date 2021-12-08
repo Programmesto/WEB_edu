@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<script src="problem.js"></script>
+<body>
+
+    <form name="form">
+        <div id="problem1_box" class="problem">
+            <h3>Задание 1:</h3>
+            
+            <label for="problem1">На какой свет можно переходить дорогу?</label>
+
+            <P><INPUT type="radio" name="problem1" value="green" required onclick="validateProblem1()"> Зеленый</P>
+
+            <P><INPUT type="radio" name="problem1" value="red" required onclick="validateProblem1()"> Красный</P>
+
+            <P><INPUT type="radio" name="problem1" value="blue" required onclick="validateProblem1()"> Синий</P>
+
+            <P><INPUT type="radio" name="problem1" value="yellow" required onclick="validateProblem1()"> Желтый</P>
+
+        </div>
+
+        <div id="problem2_box" class="problem">
+            <h3>Задание 2:</h3>
+            
+            <label for="problem2">Что означает знак «кирпич»?</label>
+
+            <P><INPUT type="radio" name="problem2" value="1" required onclick="validateProblem2()"> Проезд запрещен</P>
+
+            <P><INPUT type="radio" name="problem2" value="2" required onclick="validateProblem2()"> Ограничение скорости</P>
+
+            <P><INPUT type="radio" name="problem2" value="3" required onclick="validateProblem2()"> Обгон запрещен</P>
+
+        </div>
+        
+    </form>
+
+
+    
+
+</body>
+</html>

@@ -21,9 +21,13 @@ function checkPasswords() {
     }
     if (valid) {
         document.getElementById("checkbox").style.opacity = "1";
+        document.getElementById("repeatPassword").style.backgroundColor = "#99bd85";
+        document.getElementById("password").style.backgroundColor = "#99bd85";
     }
     else {
         document.getElementById("checkbox").style.opacity = "0";  
+        document.getElementById("repeatPassword").style.backgroundColor = "#c45757";
+        document.getElementById("password").style.backgroundColor = "#c45757";
     }
     document.getElementById("passValComment").innerHTML = passValComment;  
 
