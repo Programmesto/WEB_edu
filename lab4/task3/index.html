@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> (5)Лабораторная работа №1 </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        function updateCartStatus() {
+        
+        if (localStorage.getItem("cart") == null) {
+            document.getElementById("cart").innerHTML = "Корзина(пусто)"
+        } else {
+            document.getElementById("cart").innerHTML = "Корзина(есть товары)"
+        }
+        }
+    </script>
+
+<body onload="tryToLogin(); updateCartStatus()">
+    <div id = "top"> 
+        Заголовок сайта 
+    </div>
+
+    <div id="formContainer">
+        <form action="" name="regForm" id="regForm">
+            <h3 id="hello"></h3>
+            <h3>Вход:</h3>
+            <p>
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" placeholder="login" maxlength="10" pattern="[A-Za-z]{6,}" />
+            </p>
+            <p>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password">
+            </p>
+            <p>
+                <input type="button" id="submitButton" value="войти" onclick="submitLogin()" >
+            </p>
+        </form>
+    </div>
+    
+    <div id="container">
+
+        <div id="col1">
+            <p>
+            <A href="index.html">Главная</A><br>
+            <A href="text11.html">Текст №1</A><br>
+            <A href="text22.html">Текст №2</A><br>
+            <A href="cart.html" id="cart">Корзина</A><br>
+            <A href="../../lab2/index.html">Форма</A><br>
+            
+            </p>
+        </div>
+
+        <div id="col2"> 
+            <p>Контент. Дизайн CSS две колонки, пожалуй, самый популярный. Создать страницу с таким расположением колонок можно двумя способами, рассмотрим каждый отдельно. 
+            </p> 
+            <p>С помощью CSS выполняется логическое форматирование html-документа, позволяющее разделить содержание и оформление html-документа Использование CSS рекомендовано к применению WWW-консорциумом. 
+            </p> 
+        </div>
+        
+        
+    </div>
+    
+    <div id="bottom">
+        Подвал
+    </div>
+</body>
+
+</html>

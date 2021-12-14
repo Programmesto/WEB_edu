@@ -6,7 +6,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <script src="script.js"></script>
-<body>
-    <h3>Тест</h3>
+<body onload="updateResults()">
+    <h2>Финальный тест</h2>
+    <form action="" name="examForm">
+        
+        <div id="problem1_box" class="problem">
+            <h3>Задание 1:</h3>
+            
+            <label for="problem1">На какой свет можно переходить дорогу?</label>
+
+            <P><INPUT type="radio" name="problem1" value="green" required> Зеленый</P>
+
+            <P><INPUT type="radio" name="problem1" value="red" required> Красный</P>
+
+            <P><INPUT type="radio" name="problem1" value="blue" required> Синий</P>
+
+            <P><INPUT type="radio" name="problem1" value="yellow" required> Желтый</P>
+
+        </div>
+
+        <div id="problem2_box" class="problem">
+            <h3>Задание 2:</h3>
+            
+            <label for="problem2">Можно ли вам остановиться в указанном месте?</label>
+
+            <P><INPUT type="radio" name="problem2" value="yes" required> Да</P>
+
+            <P><INPUT type="radio" name="problem2" value="no" required> Нет</P>
+
+            <P><INPUT type="radio" name="problem2" value="moreYes" required> Скорее нет, чем да</P>
+
+            <P><INPUT type="radio" name="problem2" value="whatever" required> Какая разница?</P>
+
+        </div>
+        <div id="submit" onclick="validate()">
+            <button id="submitButton">Проверить</button>
+        </div>
+        
+    </form>
+    <div id="scores">
+        <p>
+            Ваша оценка за тест: <div id="currentScore"></div>
+        </p>
+        <p>
+            Предыдущая оценка: <div id="lastScore"></div>
+        </p>
+    </div>
+    
 </body>
 </html>
